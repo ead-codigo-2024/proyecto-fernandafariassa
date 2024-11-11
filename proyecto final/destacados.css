@@ -1,0 +1,232 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Introducción */
+.intro {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+}
+.introp {
+    font-size: 1.2rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10px;
+    color: #555;
+
+}
+.intro h1 {
+    text-align: center;
+    font-size: 3.7rem;
+}
+.intro2 h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.intro2 {
+    color: #333;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 20px;
+    padding: 10px;
+}
+.intro2 p {
+    font-size: 1.2rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10px;
+    color: #555;
+}
+/* Galería */
+.gallery {
+    padding: 20px 80px;
+    padding-top: 40px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Overlay para el gradiente y el texto */
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(9, 0, 28, 0.801), transparent);
+    color: white;
+    border-radius: 0 0 8px 8px;
+    padding: 5%;
+}
+
+.info p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.info span, .info .description {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+/* Texto adicional que se despliega */
+.more-text {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Botón "Leer más" */
+.read-more-btn {
+    background: none;
+    border: none;
+    color: #dff600;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px 0;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+.more-text::first-letter {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+    float: left;
+    margin-right: 4px;
+    line-height: 1;
+}
+
+/* Pie de página */
+/* Estilo del pie de página */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Media Queries para dispositivos más pequeños */
+@media (max-width: 1024px) {
+    .gallery {
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 30px;
+    }
+    .hero {
+        height: 40vh;
+    }
+
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .gallery {
+        padding: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .shop-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer input[type="email"] {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,176 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;     
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto en blanco */
+}
+
+.header a {
+    color: white; /* Asegura que los enlaces también sean blancos */
+    text-decoration: none; /* Quita el subrayado de los enlaces, opcional */
+    font-weight: bold;
+}
+
+.logo {
+    color: white; /* Asegura que el logo también sea blanco */
+    font-weight: bold;
+}
+
+/* Sección principal con la imagen de fondo */
+.hero {
+    height: 100vh;
+    background-image: url(imagenes/header\ 222222.jpg); /* Cambia 'your-image.jpg' a la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Botón de la sección Hero */
+.shop-button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #dff600; /* Color amarillo similar al ejemplo */
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.contenedor {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 40px 0;
+}
+
+/* Imagen principal */
+.imagen-principal img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+/* Texto principal */
+.texto-principal {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Subtítulo grande */
+.subtitulo {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.subtitulo h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.subtitulo h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.subtitulo p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Texto de detalle */
+.texto-detalle {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 20px 0;
+    color: #666;
+}
+
+.imagenes-mosaico {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 40px; /* Espacio entre elementos */
+    padding: 20px;
+}
+
+.imagen-contenido {
+    display: flex;
+    justify-content: center; /* Centra la imagen en su columna */
+}
+
+.imagen-contenido img {
+    max-width: 250px; /* Limita el ancho máximo de la imagen */
+    width: 100%; /* Asegura que la imagen no se expanda más allá del contenedor */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.texto-contenido {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+    background-color: #f9f9f9; /* Fondo blanco suave */
+    border-radius: 8px;
+}
+
+
+/* Pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.footer .subscribe {
+    margin-bottom: 20px;
+}
+.footer input[type="email"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.footer-links h4 {
+    font-size: 16px;
+}
+.footer-links p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+

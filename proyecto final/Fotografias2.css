@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.intro2 {
+    text-align: center;
+    padding: 50px 20px;
+    color: #000000;
+    padding: 10%;
+}
+
+.intro2 h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro2 p {
+    font-size: 18px;
+}
+
+.exhibition-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+
+.exhibition {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exhibition img {
+
+    height: 50vh;
+    object-fit: cover;
+}
+
+.exhibition-content {
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.exhibition h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.exhibition p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.exhibition-info {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.exhibition-info span {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.more-btn {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.more-btn:hover {
+    background-color: #555;
+}
+/* Estilo del pie de página */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}

@@ -1,0 +1,119 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sección introductoria */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    color: #000000;
+}
+
+.intro h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+/* Estilo para los planes de suscripción */
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.plan {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.plan h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.plan .price {
+    font-size: 24px;
+    color: #f44336;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.plan .btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plan .btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}

@@ -1,0 +1,185 @@
+/* styles.css */
+
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sección principal con la imagen de fondo */
+.hero {
+    height: 80vh;
+    background-image: url(imagenes/header\ 222222.jpg); /* Cambia 'your-image.jpg' a la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.hero h1{
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-align: end;
+  padding-top:40px ;
+  font-weight: 700;
+  background-color: #000;
+
+}
+
+
+  
+  /* Menú desplegable activo */
+  .menu.active {
+    display: block;
+  }
+  
+  /* Secciones */
+  main {
+    padding: 20px;
+  }
+  
+  .welcome-section,
+  .services-section,
+  .news-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .welcome-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    padding: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Servicios */
+/* Contenedor principal de la sección de servicios */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+  }
+  
+  /* Estilo de cada tarjeta de servicio */
+  .service-card {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Color de fondo para las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hacer que la imagen ocupe todo el contenedor */
+  .service-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
+  }
+  
+  /* Efecto de zoom al pasar el mouse sobre la tarjeta */
+  .service-card:hover {
+    transform: scale(1.05); /* Amplía la tarjeta ligeramente */
+  }
+  
+  /* Estilo del texto en las tarjetas */
+  .service-card h3 {
+    position: absolute;
+    bottom: 10px; /* Posicionar el título en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  
+  /* Suscripción */
+  .news-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .subscribe-form input, .subscribe-form button {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  
+  .subscribe-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  /* Estilo del pie de página */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+}
