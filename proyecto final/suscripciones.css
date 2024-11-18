@@ -117,3 +117,98 @@ footer {
     width: 100%;
     margin-top: 40px;
 }
+@media (max-width: 1024px) {
+    header .logo h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .intro h2 {
+        font-size: 32px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .plans {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro h2 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    .plan {
+        width: 90%; /* Asegura que ocupe casi todo el ancho en dispositivos pequeños */
+    }
+
+    .plan h3 {
+        font-size: 24px;
+    }
+
+    .plan .price {
+        font-size: 20px;
+    }
+
+    .plan ul li {
+        font-size: 14px;
+    }
+
+    .plan .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 12px;
+    }
+    .plans {
+        gap: 0px; /* Espacio más reducido en dispositivos pequeños */
+        width: 80%;
+        padding: 0;
+    }
+   
+
+    .plan h3 {
+        font-size: 20px;
+    }
+
+    .plan .price {
+        font-size: 18px;
+    }
+
+    .plan ul li {
+        font-size: 12px;
+    }
+
+    .plan .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

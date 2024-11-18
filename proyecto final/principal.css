@@ -44,7 +44,7 @@ nav a:hover {
 /* Sección principal con la imagen de fondo */
 .hero {
     height: 80vh;
-    background-image: url(imagenes/header\ 222222.jpg); /* Cambia 'your-image.jpg' a la URL de tu imagen de fondo */
+    background-image: url(imagenes/header\ 222222.jpg); 
     background-size: cover;
     background-position: center;
     position: relative;
@@ -182,4 +182,55 @@ footer {
   bottom: 0;
   width: 100%;
   margin-top: 40px;
+}
+/* Media Queries para dispositivos responsivos */
+@media (max-width: 1024px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo h1 {
+    font-size: 1.5rem;
+  }
+  nav a {
+    font-size: 0.9rem;
+    margin-left: 10px;
+  }
+  .hero h1 {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  .welcome-section p {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+  }
+  .services-container h3{
+    font-size: 0.7rem;
+    padding: 5px;
+    
+  }
 }
